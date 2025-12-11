@@ -1,15 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a, p {
     margin: 0;
 }
+h1 {
+    font-size: 120px;
+    font-family: "Dancing Script", cursive;
+}
+h2 {
+    font-size: 50px;
+    font-weight: 400;
+}
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 5vh;
     background-color:rgb(159, 204, 173);
     padding-top: 2vh;
+    z-index: 100;
 }
 .header a {
     text-align: center;
@@ -22,29 +37,34 @@ h1, h2, h3, h4, h5, h6 {
     background-color:rgb(203, 216, 207);
     align-items: center;
     width: 100%;
-    height:75vh;
+    margin-top: 7vh;
+    height: 95vh;
     padding: 0;
+    padding-top: 5vh;
 }
 .head-section h1 {
     text-align: center;
     color:rgb(10, 0, 38);
     margin: 0;
     padding-top: 25vh;
-    margin-left: 65%;
+    margin-left: 50%;
 }
-.head-section h2 {
+.head-section h4 {
     text-align: center;
     color:rgb(10, 0, 38);
     margin: 0;
-    padding-top: 5vh;
-    margin-left: 65%;
+    padding-top: 2vh;
+    margin-left: 50%;
+    font-size: 35px;
+    font-weight: 400;
 }
 .donation {
     background-color:rgb(185, 185, 185);
     align-items: center;
     width: 100%;
-    height: 80vh;
+    height: 95vh;
     padding: 0;
+    padding-top: 5vh;
 }
 .donation h2{
     text-align: left;
@@ -66,28 +86,28 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: Oswald, sans-serif;
+    font-size: 30px;
 }
 .donation button:hover {
     background-color: rgb(109, 197, 144);
 }
 .leadership {
     background-color:rgb(222, 226, 230);
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-}
-.leadership {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-height: 90vh;
+    padding-top: 5vh;
 }
 .leadership h2 {
     text-align: center;
     color:rgb(10, 0, 38);
     padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
     margin: 0;
 }
 .cards-container {
@@ -96,13 +116,14 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: 100%;
     gap: 2vh;
+    margin-bottom: 2vh;
 }
 .card {
     background-color: white;
     display: flex;
     flex-direction: column;
     width: 35vh;
-    height: 40vh;
+    height: 38vh;
     padding-top: 10px;
     padding-left: 10px;
     border-radius: 10px;
