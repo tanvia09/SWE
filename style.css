@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -16,13 +15,17 @@ h2 {
     font-size: 50px;
     font-weight: 400;
 }
+a, h3 {
+    font-family: Roboto Mono, monospace;
+    text-decoration: none;
+}
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 5vh;
-    background-color:rgb(159, 204, 173);
+    background-color:rgb(255, 217, 0);
     padding-top: 2vh;
     z-index: 100;
 }
@@ -34,37 +37,67 @@ h2 {
     padding-left: 2vh;
 } 
 .head-section {
-    background-color:rgb(203, 216, 207);
+    background-color:rgb(4, 0, 14);
     align-items: center;
     width: 100%;
     margin-top: 7vh;
     height: 95vh;
     padding: 0;
-    padding-top: 5vh;
+    flex-wrap: wrap;
+    align-items: left;
+}
+.head-section img {
+    height: 95vh;
+    z-index: 0;
+    padding-top: 0;
+    padding:0;
+    padding-right: 8vh;
 }
 .head-section h1 {
     text-align: center;
-    color:rgb(10, 0, 38);
+    color:rgb(208, 219, 255);
+    margin-left: 10;
     margin: 0;
-    padding-top: 25vh;
-    margin-left: 50%;
+    z-index: 2;
+    margin-left: 10%;
 }
 .head-section h4 {
     text-align: center;
-    color:rgb(10, 0, 38);
+    color:rgb(208, 219, 255);
     margin: 0;
     padding-top: 2vh;
-    margin-left: 50%;
+    margin-left: 10%;
     font-size: 35px;
     font-weight: 400;
+    font-family: Roboto Mono, monospace;
+    z-index: 2;
 }
+.head-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.head-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head-section h1, h4 {
+    flex: 1;
+}
+
 .donation {
-    background-color:rgb(185, 185, 185);
+    background-color:rgb(202, 183, 183);
     align-items: center;
     width: 100%;
     height: 95vh;
     padding: 0;
-    padding-top: 5vh;
+}
+.donation img {
+    width: 100%;
+    height: 95vh;
+    z-index: 1;
+    padding-top: 0;
+    padding:0;
 }
 .donation h2{
     text-align: left;
@@ -77,20 +110,19 @@ h2 {
     display: block;
     margin: 0;
     margin-left: 12.5vh;
-    margin-top: 20vh;
-    margin-bottom: 2vh;
+    margin-top: 60vh;
     padding: 10px 20px;
     font-size: 20px;
-    background-color: rgb(159, 204, 173);
+    background-color: rgb(68, 107, 165);
     color: rgb(10, 0, 38);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: Oswald, sans-serif;
+    font-family: Roboto Mono, monospace;
     font-size: 30px;
 }
 .donation button:hover {
-    background-color: rgb(109, 197, 144);
+    background-color: rgb(21, 54, 102);
 }
 .leadership {
     background-color:rgb(222, 226, 230);
@@ -109,6 +141,13 @@ h2 {
     padding-top: 5vh;
     padding-bottom: 2vh;
     margin: 0;
+}
+.leadership img {
+    width: 34vh;
+    height: 25vh;
+    border-radius: 3px;
+    object-fit: cover;
+    object-position: 50% 15%;
 }
 .cards-container {
     display: flex;
