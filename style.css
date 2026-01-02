@@ -23,8 +23,8 @@ a, h3 {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 5vh;
-    background-color:rgb(255, 217, 0);
+    height: 10vh;
+    background-color:rgb(255, 205, 5);
     padding-top: 2vh;
     z-index: 100;
     text-align: right;
@@ -36,6 +36,13 @@ a, h3 {
     font-size: 1.875rem;
     margin-right: 2vh;
 } 
+.header img {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 2px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
 .head-section {
     align-items: center;
     width: 100%;
@@ -111,7 +118,7 @@ a, h3 {
     height:100vh;
     z-index: 1;
     padding-top: 0;
-    padding:0;
+    padding: 10vh;
 }
 .donation h2{
     text-align: right;
@@ -162,6 +169,11 @@ a, h3 {
     padding-bottom: 2vh;
     margin: 0;
 }
+
+.leadership h3 {
+    font-size: 1rem;
+}
+
 .leadership img {
     width: 25vh;
     height: 17vh;
@@ -193,3 +205,12 @@ a, h3 {
     text-align: center;
     margin: auto;
 }
+
+.credits {
+    width: 100%;
+    height: 5vh;
+    background-color:rgb(166, 147, 214);
+}
+
+
+
