@@ -8,12 +8,15 @@
 </head>
 <body>
     <div class="header">
-        <a href="#head-text">  Home  </a>
-        <a href="#socials">  Contact  </a>
-        <a href="#donation">  Donate  </a>
-        <a href="#leadership">  Our Team  </a>
+        <img src="img/placeholder.jpg" alt="placeholder">
+        <nav>
+        <a href="#head-section">Home</a>
+        <a href="#socials">Contact</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#donation">Donate</a>
+        </nav>
     </div>
-    <div class="head-section" id="head-text">
+    <div class="head-section" id="head-section">
         <div class="head-text">
             <h1>The Valkyries</h1>
             <a>The Mount Hebron chapter of the Society of Women Engineers (SWE), the Valkyries, aims
@@ -21,16 +24,33 @@
                 underrepresented genders can connect, share experiences, and empower each other.
             </a>
         </div>
-        <div class="head-image">
-            
-        </div>
+        <img src="img/placeholder.jpg" alt="headerimage">
     </div>
 
     <div class="socials" id="socials">
-        <h2>Join Us!</h2>
-        <img src="img/groupMeLogo.jpg" alt="GroupMe Logo"><a>GroupMe</a>
-        <br>
-        <a><img src="img/instagramLogo.png" alt="Instagram Logo">Instagram</a>
+        
+        <div class="socials-links">
+            <h2>Join Us!</h2>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fgroupme.com%2Fjoin_group%2F109224482%2FNGbeAKqR%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnCFR7sfB224HYbICo0JetsafU9iRh2rd9avt3WsDHYbtCyxwsGvSP9-vGf3Y_aem_1pqcWQDdCev2xK3DKnC_EA&e=AT2GV1yAWdKeD-Na6ick_XEdXWUn6r1mcjzvKcQoNbDJU8XK6O8qBEuHriZTLV6rcLGDLh544O_DDgMKQ965o1ZQOUxNZ_poJNzGExW3inQ_VKGlOauNVyNPjg"><button><img src="img/groupMeLogo.jpg" alt="GroupMe Logo"><a>GroupMe</a></button></a>
+            
+            <br>
+            <a href="https://www.instagram.com/mhhs.swe/"><button><img src="img/instagramLogo.png" alt="Instagram Logo"><a>Instagram</a></button></a>
+        </div>
+        
+        <div class="carousel">
+            <img class="carousel-image" src="img/placeholder.jpg">
+        </div>
+        <script>
+            const images = ["img/placeholder.jpg", "img/groupmeLogo.jpg", "img/instagramLogo.png"];
+            let i = 0;
+            const img = document.querySelector(".carousel-image");
+
+            setInterval(() => {
+                i = (i + 1) % images.length;
+                img.src = images[i];
+            }, 2000);
+        </script>
+
     </div>
 
     <div class="leadership" id="leadership">
@@ -72,13 +92,19 @@
     </div>
 
     <div class="donation" id="donation">
-        <h2>Want to Support Our Cause?</h2>
-        <a>Donations to SWE Club can be sent or delivered to: <br>
-        <b>Mt. Hebron High School (Attn. Mr. Lucania, SWE Club) <br>
-            9440 Old Frederick Rd, Ellicott City, MD 21042</b><br>
-        *Please make checks payable to “Mt. Hebron High School” with SWE Club as the memo; cash also accepted.<br>
-        If you have any questions or concerns, please email: David_Lucania@hcpss.org</a>
-        <a href="https://osp.osmsinc.com/HowardMD/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=DA010-VAR135"><button>Donate</button></a>
+        <div class="donation-image">
+            <img src="img/placeholder.jpg">
+        </div>
+        <div class="donation-text">
+            <h2>Want to Support Our Cause?</h2>
+            <a>Donations to SWE Club can be sent or delivered to: <br>
+            <b>Mt. Hebron High School (Attn. Mr. Lucania, SWE Club) <br>
+                9440 Old Frederick Rd, Ellicott City, MD 21042</b><br>
+            *Please make checks payable to “Mt. Hebron High School” with SWE Club as the memo; cash also accepted.<br>
+            If you have any questions or concerns, please email: David_Lucania@hcpss.org</a>
+            <a href="https://osp.osmsinc.com/HowardMD/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=DA010-VAR135"><button>Donate</button></a>
+            <img src="img/osp.gif">
+        </div>
     </div>
 </body>
 </html>

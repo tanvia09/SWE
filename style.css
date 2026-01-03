@@ -23,42 +23,45 @@ a, h3 {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 5vh;
-    background-color:rgb(255, 205, 5);
-    padding-top: 2vh;
+    height: 9vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgb(255, 205, 5);
     z-index: 100;
-    text-align: right;
-    padding-bottom: 2vh;
 }
 .header a {
     text-decoration: none;
     color: rgb(10, 0, 38);
     font-size: 1.875rem;
     margin-right: 2vh;
+    
 } 
 .header img {
     width: 8vh;
     height: 8vh;
+    align-items: left;
     border-radius: 2px;
     object-fit: cover;
     object-position: 50% 50%;
+    margin-left: 1vh;
 }
 .head-section {
     align-items: center;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding: 0;
-    flex-wrap: wrap;
-    align-items: left;
+    display: flex;
+    align-items: center;
+    gap: 8vh;
     background-color: rgb(212, 222, 243);
-    padding-top: 20vh;
 }
 .head-section img {
-    height: 100vh;
-    z-index: 0;
-    padding-top: 0;
-    padding:0;
-    padding-right: 8vh;
+    height: 75vh;
+    width: 80vh;
+    margin-right: 2vh;
 }
 .head-section h1 {
     text-align: left;
@@ -73,50 +76,71 @@ a, h3 {
     font-size: 1.25rem;
     z-index: 2;
     margin-left: 3vh;
-    margin-right: 85vh;
     padding: 10px 20px;
     border-radius: 2px;
-}
-.head-section {
-    display: flex;
-    flex-wrap: wrap;
 }
 .head-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-.head-section h1, h4 {
-    flex: 1;
+    padding-top: 0vh;
 }
 .socials {
     height: 100vh;
     margin-left: 3vh;
+    display: flex;
+    flex-direction: row;
 }
-.socials h2 {
+.socials-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socials-links h2 {
     padding-top: 10vh;
 }
-.socials a {
+.socials-links a {
     font-size: 1.8rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.socials img {
+.socials-links img {
     height: 25vh;
     border-radius: 40px;
     margin-top: 5vh;
 }
+.socials-links button {
+    background-color: white;
+    border: none;
+}
 
+.carousel img {
+    margin-top: 10vh;
+    margin-left: 30vh;
+    height: 80vh;
+    width: auto;
+}
 
 .donation {
+    display: flex;
     align-items: center;
     width: 100%;
     height: 90vh;
     padding: 0;
     padding-top:2vh;
 }
-.donation img {
-    width: 100%;
-    height:100vh;
+.donation-text {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+.donation-text img {
+    height: 15vh;
+    width: 30vh;
+}
+.donation-image img {
+    width: 60vh;
+    height: 80vh;
     z-index: 1;
     padding-top: 0;
     padding: 10vh;
@@ -132,17 +156,16 @@ a, h3 {
     display: block;
     text-align: right;
     margin-right: 3vh;
-    margin-left: 90vh;
     margin-top: 5vh;
     font-size: 1.2rem;
 }
 .donation button {
     display: block;
     margin: 0;
-    margin-left: 50vh;
-    margin-top: 30vh;
-    padding: 10px 20px;
+    margin-left: 65vh;
+    margin-top: 10vh;
     font-size: 1.25rem;
+    padding: 10px;
     background-color: rgb(68, 107, 165);
     color: rgb(10, 0, 38);
     border: none;
@@ -150,6 +173,7 @@ a, h3 {
     cursor: pointer;
     font-family: Roboto Mono, monospace;
     font-size: 1.875rem;
+    margin-bottom: -15vh;
 }
 .donation button:hover {
     background-color: rgb(63, 140, 255);
@@ -168,7 +192,6 @@ a, h3 {
     color:rgb(10, 0, 38);
     padding-top: 5vh;
     padding-bottom: 2vh;
-    margin: 0;
 }
 
 .leadership h3 {
@@ -183,12 +206,13 @@ a, h3 {
     object-position: 50% 15%;
 }
 .cards-container {
+    margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 3vh;
     width: 100%;
     gap: 2vh;
-    margin-bottom: 2vh;
 }
 .card {
     background-color: rgb(255, 232, 232);
